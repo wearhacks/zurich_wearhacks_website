@@ -1,0 +1,36 @@
+
+@startup-basePath: "../../startup/";
+@import '../../startup/flat-ui/less/variables.less';
+@import '../../startup/flat-ui/less/mixins.less';
+@import '../../startup/common-files/less/mixins.less';
+@import '../../startup/common-files/less/common.less';
+@import '../../startup/common-files/less/helper.less';
+@import '../../startup/common-files/less/navbar.less';
+@import '../../startup/ui-kit/ui-kit-header/less/header-9.less';
+@import '../../startup/ui-kit/ui-kit-content/less/content-13.less';
+
+.customModal {
+	margin-top: 50px;
+	.modal-footer,.modal-header {
+		text-align:center;
+		border: none;
+	}
+	@media (min-width: 400px) {
+			width: 400px;
+		}
+	.fui-cross {
+		font-size: 70px;
+    	color: @pomegranate;
+	}
+	.fui-check {
+		font-size:70px;
+		color:@emerald;
+	}
+}
+
+#successModal,#errorModal {
+	.modal-title p {
+		font-size: 15px;
+		margin-top:10px;
+	}	
+}
