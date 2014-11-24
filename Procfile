@@ -1,1 +1,1 @@
-web: node ber_index.js
+web: node zur_index.js
