@@ -18,7 +18,6 @@ exports.subscribe = function(req, res){
   } 
   else {
     //api.call('lists', 'subscribe', { id: process.env.LIST_ID, email: { email: req.param('email') } }, function (error, data) {
-    if (req.param('base') == 'zur') {
     api.call('lists', 'subscribe', { id: process.env.ZUR_LIST_ID, email: { email: req.param('email') } }, function (error, data) {
         if (error) {
           console.log(JSON.stringify(data));
@@ -28,6 +27,6 @@ exports.subscribe = function(req, res){
           res.send(JSON.stringify(data)); // Do something with your data!
         }
       });
-     }
+     
   }
 };
